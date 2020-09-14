@@ -12,14 +12,9 @@ public class Phone {
         this.model = model;
     }
 
-    public Phone(Phone phone, int weight) {
-        this(phone.number, phone.model);
-        this.weight = weight;
-    }
 
     public Phone(int number, int weight, String model) {
-        this.number = number;
-        this.weight = weight;
+        this(number, model);
         this.model = model;
     }
 
@@ -72,5 +67,4 @@ public class Phone {
             System.out.println(j);
         }
     }
-
 }
