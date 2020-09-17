@@ -1,4 +1,4 @@
-package homework.day3.task02;
+package homework.day3.task03;
 
 public class Student {
 
