@@ -2,22 +2,12 @@ package homework.day3.task02;
 
 public class Main {
     public static void main(String[] args) {
-        Student student = new Aspirant();
-
+        Student student = new Aspirant(5.0);
+        Student[] studenArray = {new Student(2.0), new Student(5.0), new Aspirant(4.0),
+                new Aspirant(5.0)};
+        for (Student s : studenArray) {
+            System.out.println(s.getScholarship());
+        }
     }
 }
-/*Создайте пример наследования, реализуйте класс Student и класс
-Aspirant, аспирант отличается от студента наличием некой научной
-работы.
-∎ Класс Student содержит переменные: String firstName, lastName,
-group. А также double averageMark, содержащую среднюю оценку.
-∎ Создать переменную типа Student, которая ссылается на объект
-типа Aspirant.
-∎ Создать метод getScholarship() для класса Student, который
-возвращает сумму стипендии. Если средняя оценка студента равна
-5, то сумма 100, иначе 80. Переопределить этот метод в классе
-Aspirant. Если средняя оценка аспиранта равна 5, то сумма 200,
-иначе 180.
-∎ Создать массив типа Student, содержащий объекты класса
-Student и Aspirant. Вызвать метод getScholarship() для каждого
-элемента массива.*/
+

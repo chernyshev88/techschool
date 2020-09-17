@@ -1,6 +1,11 @@
 package homework.day3.task02;
 
 public class Student {
+
+    public Student(double averageMark) {
+        this.averageMark = averageMark;
+    }
+
     private String firstName, lastName, group;
     private double averageMark;
 
@@ -8,7 +13,7 @@ public class Student {
         return averageMark;
     }
 
-    public int getScholarship(){
-        return ((averageMark==5) ? 100 : 80);
+    public int getScholarship() {
+        return ((averageMark == 5) ? 100 : 80);
     }
 }
